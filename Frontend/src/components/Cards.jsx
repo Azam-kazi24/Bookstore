@@ -4,8 +4,8 @@ function Cards({item}) {
     console.log(item)
   return (
    <>
-    <div className='mt-4 my-3 p-3'>
-    <div className="card bg-base-100 w-92 shadow-sm">
+    <div className='mt-4 my-3 p-3 '>
+    <div className="card bg-base-100 w-92 shadow-sm hover:scale-105 duration-500 ease-in-out  dark:bg-slate-900 dark:text-white dark:border">
   <figure>
     <img src={item.image}
       />
@@ -17,8 +17,8 @@ function Cards({item}) {
     </h2>
     <p>{item.title}</p>
     <div className="card-actions justify-between">
-      <div className="badge badge-outline  hover:bg-pink-500 hover:text-white hover:cursor-pointer">${item.price}</div>
-      <div className="badge badge-outline  px-3 py-2  hover:bg-pink-500 hover:text-white hover:cursor-pointer">Buy Now</div>
+      <div className="badge badge-outline dark:text-white  hover:bg-pink-500 hover:text-white hover:cursor-pointer">${item.price}</div>
+      <div className="badge badge-outline  px-3 py-2  dark:text-white hover:bg-pink-500 hover:text-white hover:cursor-pointer">Buy Now</div>
     </div>
   </div>
 </div>

@@ -1,9 +1,9 @@
 import React from 'react'
-import banner from '../assets/Banner.jpg'
+import banner from '../assets/Banner.png'
 function Banner() {
   return (
     <>
-    <div className='max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10'>
+    <div className='max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-10 dark:bg-slate-900 dark:text-white'>
       <div className='w-full md:w-1/2 mt-12 md:mt-32 order-2 md:order-1'>
       <div className='space-y-12 '>
       <h1 className='font-bold text-4xl'>
@@ -18,7 +18,7 @@ Hello, welcomes here to learn something <span className='text-pink-500'>new ever
       </div>
       <button className="btn btn-secondary mt-6">Secondary</button>
         </div>
-      <div className='w-full md:w-1/2 order-1'>
+      <div className='w-full md:w-1/2 order-1 px-3 '>
       <img src={banner} className='w-92 h-92' alt="" />
       </div>
     </div>
